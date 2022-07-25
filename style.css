@@ -295,6 +295,15 @@ ul{
     display: block;
 } */
 
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
 .image-gallery figcaption{
     position: absolute;
     left: 30px;
@@ -309,6 +318,11 @@ ul{
 
 .image-gallery-row figure:hover{
     cursor: pointer;
+}
+
+.image-gallery-row figure:hover .overlay{
+    display: block;
+    background-color: rgba(21, 24, 36, 0.4);
 }
 
 .image-gallery-row figure:hover figcaption{
@@ -814,7 +828,7 @@ button:hover{
     }
 
     .image-gallery figcaption{
-        font-size: 40px;
+        font-size: 24px;
     }
 
     .footer{
