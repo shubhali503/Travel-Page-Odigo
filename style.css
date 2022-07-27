@@ -20,7 +20,9 @@ ul{
 }
 
 .container{
-    margin: 0 89px;
+    /* margin: 0 89px; */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header{
@@ -138,25 +140,36 @@ ul{
     color: white;
 }
 
-.search-btn{
-    padding: 15px 39px 14px;
-    background-color: #1b7dff;
+.odigo-btn{
     border: none;
-    font-size: 24px;
-    font-weight: 500;
     color: white;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
     cursor: pointer;
-    vertical-align: middle;
+    font-family: 'Lato', sans-serif;
     transition: all 0.3s;
 }
+
+.odigo-btn--lg{
+    padding: 15px 39px 14px;
+    background-color: #1b7dff;
+    font-size: 24px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.odigo-btn:hover{
+    background-color: #023e8a;
+}
+
+
 
 .odigo-benefits{
     position: relative;
     top: -180px;
     background-color: white;
     margin: 0 89px -49px;
+    /* max-width: 1200px;
+    margin: 0 auto -49px; */
     box-shadow: 0 2px 20px 0 rgba(21, 24, 36, 0.16);
 }
 
@@ -442,19 +455,9 @@ ul{
     color: #102746;
 }
 
-.top-places__item button{
+.odigo-btn--sm{
     padding: 12px 19px 11px;
     background-color: #006dfe;
-    border: none;
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: 'Lato', sans-serif;
-    transition: all 0.3s;
-}
-
-button:hover{
-    background-color: #023e8a;
 }
 
 .video-div{
@@ -659,7 +662,7 @@ button:hover{
         margin-bottom: 30px;
     }
 
-    .search-btn{
+    .odigo-btn--lg{
         font-size: 20px;
     }
 
